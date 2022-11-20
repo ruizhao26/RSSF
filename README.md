@@ -10,7 +10,7 @@ which is proposed in
 
 Real scenes with spike and flow (RSSF) is a dataset for training and evaluating spike-based optical flow. The dataset is generated based on data in [Slow Flow dataset](http://www.cvlibs.net/projects/slow_flow/) that is captured by high-speed cameras. There are 31 scenes for training and 10 scenes for testing. There are three kinds of training scenes with different resolutions and numbers of spike frames. There are a total of 9.6k+ flow fields and 193k+ spike frames in the training dataset. As for the 11 scenes in the evaluation dataset, we select the first 200 flow fields in each scene. To standardize the evaluation data, we use center clipped to make the width of each spike frame and flow field to be 1024 and make the height of images whose height exceeds 768 to be 768. The totals of flow fields and spike frames are 2.2k and 44.22k, respectively. Noted that the ``Number of Flow Fields'' only counts the flow in $dt=20$ case. The number of flow fields in $dt=40$ and $dt=60$ cases is similar to that in the $dt=20$ case.
 
-Statistics of the RSSF
+Statistics of the RSSF:
 
 <img src="https://github.com/ruizhao26/RSSF/blob/main/figs/rssf_statistics.png" alt="rssf_statistics" style="zoom: 33%;" />
 
