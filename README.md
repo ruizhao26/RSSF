@@ -3,8 +3,14 @@
 This repository contains the download link and deployment code for our dataset:  
 Real Scenes with Spike and Flow (RSSF),  
 which is proposed in  
-[**Learninng Optical Flow from Continuous Spike Streams**](https://github.com/ruizhao26/Spike2Flow)  
+**Learninng Optical Flow from Continuous Spike Streams**  
 **NeurIPS 2022**
+
+[Paper](https://openreview.net/pdf?id=3vYkhJIty7E)
+
+[Poster](https://neurips.cc/media/PosterPDFs/NeurIPS%202022/55189.png)
+
+[Code](https://github.com/ruizhao26/Spike2Flow)
 
 ## Introduction to RSSF
 
@@ -30,9 +36,24 @@ Scenes of the testing part of the RSSF:
 
 As described in the paper, the flow is generated from the images, and the spikes are generated based on the images and flow. For saving the storage, we only release the spikes and images of the RSSF since the flow fields need much more storage compared with the spikes and images. The flow can be generated locally based on the images and the codes.
 
+#### Environment
+
+You can choose cudatoolkit version to match your server. The code is tested on PyTorch 1.10.1+cu113.
+
+```bash
+conda create -n rssf python==3.9
+conda activate rssf
+# You can choose the PyTorch version you like, we recommand version >= 1.10.1
+# For example
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+pip3 install Pillow tqdm einops scipy opencv-python
+```
+
+#### Generate Flow
+
 ```bash
 cd generate_flow &&
-# please set your rssf root in the follow .py file
+# please set your rssf root in the follow .py file or use --rssf_root to input the root
 python3 generate_flow.py --interval 20 &&
 python3 generate_flow.py --interval 40 &&
 python3 generate_flow.py --interval 60
