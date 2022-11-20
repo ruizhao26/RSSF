@@ -2,7 +2,7 @@
 
 This repository contains the download link and deployment code for our dataset:  
 Real Scenes with Spike and Flow (RSSF),  
-which is proposed in
+which is proposed in  
 [**Learninng Optical Flow from Continuous Spike Streams**](https://github.com/ruizhao26/Spike2Flow)  
 **NeurIPS 2022**
 
@@ -12,15 +12,15 @@ Real scenes with spike and flow (RSSF) is a dataset for training and evaluating 
 
 Statistics of the RSSF
 
-<img src="D:\Desktop\MyCodes\RSSF\figs\rssf_statistics.png" alt="rssf_statistics" style="zoom: 33%;" />
+<img src="https://github.com/ruizhao26/RSSF/blob/main/figs/rssf_statistics.png" alt="rssf_statistics" style="zoom: 33%;" />
 
 Scenes of training part of the RSSF:
 
-<img src="D:\Desktop\MyCodes\RSSF\figs\train_scenes.png" alt="train_scenes" style="zoom:33%;" />
+<img src="https://github.com/ruizhao26/RSSF/blob/main/figs/train_scenes.png" alt="train_scenes" style="zoom:33%;" />
 
 Scenes of the testing part of the RSSF:
 
-<img src="D:\Desktop\MyCodes\RSSF\figs\test_scenes.png" alt="test_scenes" style="zoom:33%;" />
+<img src="https://github.com/ruizhao26/RSSF/blob/main/figs/test_scenes.png" alt="test_scenes" style="zoom:33%;" />
 
 ## Download the dataset
 
